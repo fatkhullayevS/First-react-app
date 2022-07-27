@@ -1,19 +1,19 @@
 import German from "../images/germany.png"
 
 
-const Card = () => {
+const Card = ({ img, UserName, desc, Region, Capital }) => {
     return (
 
-            <div className="col-3">
-        <div className="card card-style shadow  bg-body rounded mb-5">
-            <img src={German} />
-        <div className="card-body">
-        <h5>Germany</h5>
-        <p>Population: 81,770,900</p>
-        <p>Region: Europe</p>
-        <p>Capital: Berlin</p>
-        </div>
-        </div>
+        <div className="col-3">
+            <div className="card card-style shadow  bg-body rounded mb-5">
+                <img src={img} />
+                <div className="card-body">
+                    <h5>{UserName}</h5>
+                    <p>{desc}</p>
+                    <p>{Region}</p>
+                    <p>{Capital}</p>
+                </div>
+            </div>
         </div>
     )
 }
