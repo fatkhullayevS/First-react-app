@@ -1,0 +1,38 @@
+.flag{
+    margin-top: 200px !important;
+    border-radius: 5px;
+}
+
+.left{
+    margin-top: 239px !important;
+}
+
+.left h3{
+    font-family: 'Nunito Sans' sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: #111517;
+    margin-bottom: 23px;
+}
+
+.left p{
+    margin: 0;
+    font-family: 'Nunito Sans' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #111517;
+    margin-top: 5px;
+}
+
+.right{
+    margin-top: 350px;
+}
+
+.right p{
+    margin: 0;
+    margin-top: 5px;
+}

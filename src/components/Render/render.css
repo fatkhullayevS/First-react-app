@@ -1,0 +1,12 @@
+.error{
+    font-family: sans-serif;
+    color: red;
+    text-align: center;
+    font-size: 24px;
+}
+
+.loading{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}

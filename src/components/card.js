@@ -1,20 +1,19 @@
-import German from "../images/germany.png"
+import { Link } from "react-router-dom"
 
+const Card = ({ item }) => {
 
-const Card = ({ img, UserName, desc, Region, Capital }) => {
     return (
-
-        <div className="col-3">
+        <Link to={`name/${item.name.common}`} className="col-3 text-decoration-none text-black ">
             <div className="card card-style shadow  bg-body rounded mb-5">
-                <img src={img} />
-                <div className="card-body">
-                    <h5>{UserName}</h5>
-                    <p>{desc}</p>
-                    <p>{Region}</p>
-                    <p>{Capital}</p>
+                <img src={item.flags.svg} />
+                <div className="card-body link">
+                    <h5>{item.name.common}</h5>
+                    <p>Population: {item.population}</p>
+                    <p>Region: {item.region}</p>
+                    <p>Capital: {item.capital}</p>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 
