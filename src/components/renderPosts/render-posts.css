@@ -1,6 +1,7 @@
 .flag{
     margin-top: 200px !important;
     border-radius: 5px;
+    margin-bottom: 100px    ;
 }
 
 .left{
@@ -8,6 +9,8 @@
 }
 
 .left h3{
+    margin: 0;
+    padding: 0;
     font-family: 'Nunito Sans' sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -30,9 +33,48 @@
 
 .right{
     margin-top: 350px;
+    position: relative;
 }
 
 .right p{
     margin: 0;
     margin-top: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .left{
+        margin-top: 150px !important;
+    }
+    .right{
+        margin-top: 250px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .flag{
+        margin-top: 150px !important;
+        width: 700px !important;
+        margin: 0 auto;
+    }
+    .left{
+        margin-top: 80px !important;
+        margin-left: 11%;
+    }
+    .right{
+        margin-top: 20px;
+        margin-left: 11%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .left p{
+        display: flex;
+    }.left strong{
+        margin-left: 20px;
+    }
+    .right p{
+        display: flex;
+    }
+
 }

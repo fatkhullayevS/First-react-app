@@ -1,13 +1,22 @@
+import { useState } from "react"
 import "./header.css"
 
+
 // RENDER HEADER
-const Header = () => {
+const Header = ({ theme, setTheme }) => {
 
     return (
         <>
-            <header className="shadow-sm p-3 mb-5 bg-body rounded container d-flex align-items-center ">
-                <h1 className="fs-2">Where in the world?</h1>
-                <p className=" header-desc mt-3">Dark Mode</p>
+            <header className={` ${theme} header shadow-sm p-3 bg-body d-flex align-items-center`}>
+                <div className="container">
+                    <h1 className="fs-2 heading">Where in the world?</h1>
+                    <select defaultValue={`${theme}`} className="select-mode" onChange={(evt) => {
+                        setTheme(evt.target.value)
+                    }}>
+                        <option value="light">Light Mode</option>
+                        <option value="dark">Dark Mode</option>
+                    </select>
+                </div>
             </header>
         </>
     )

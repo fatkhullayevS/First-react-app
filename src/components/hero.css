@@ -1,3 +1,44 @@
 .select{
-    margin-left: 400px;
+    margin-left: 920px !important;
+}
+
+.input{
+    position: absolute;
+}
+
+@media only screen and (max-width: 1400px) {
+    .select{
+        margin-left: 500px !important;
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .input{
+        margin-left: 200px;
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .input{
+        margin-left: 110px;
+    }
+    .select{
+        margin-left: -150px !important;
+        width: 300px !important;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .input{
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .input{
+        margin-left: 30px !important;
+    }
 }

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-const Card = ({ item }) => {
+const Card = ({ item, theme }) => {
 
     return (
-        <Link to={`name/${item.name.common}`} className="col-3 text-decoration-none text-black ">
-            <div className="card card-style shadow  bg-body rounded mb-5">
+        <Link to={`name/${item.name.common}`} className="col-lg-3 text-decoration-none text-black ">
+            <div className={`${theme} card card-style shadow bg-body rounded mb-5`}>
                 <img src={item.flags.svg} />
                 <div className="card-body link">
                     <h5>{item.name.common}</h5>

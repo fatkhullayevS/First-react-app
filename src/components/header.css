@@ -1,3 +1,63 @@
 .header-desc{
     margin-left: 800px !important;
 }
+
+.select-mode{
+    position: absolute;
+    margin-left: 1190px !important;
+    margin-top: -30px;
+}
+
+.heading{
+
+}
+
+.dark{
+    background: #2B3844 !important;
+    color:  white;
+}
+
+@media only screen and (max-width: 1400px) {
+        .select-mode{
+            margin-left: 1000px !important;
+        }
+}
+
+@media only screen and (max-width: 1200px) {
+    .select-mode{
+        margin-left: 825px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .select-mode{
+        margin-left: 585px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .select-mode{
+        margin-left: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .select-mode{
+        margin-left: 350px !important;
+    }
+    .heading{
+        font-size: 16px !important;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .select-mode{
+        margin-left: 250px !important;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .select-mode{
+        margin-left: 200px !important;
+    }
+}

@@ -5,7 +5,7 @@ import Card from "../card"
 import './render.css'
 import Infinity from "../../images/Infinity.svg"
 
-const Render = () => {
+const Render = ({ theme }) => {
     const [value, setValue] = useState("")
     const [select, setSelect] = useState("")
     const [countries, setCountries] = useState({
@@ -60,15 +60,14 @@ const Render = () => {
 
     return (
         <>
-            <Header />
-            <Hero setValue={setValue} setSelect={setSelect} />
-            <div className="container mt-5">
+            <Hero theme={theme} setValue={setValue} setSelect={setSelect} />
+            <div className={`${theme} container mt-5`}>
                 <div className="row">
                     {countries.isLoading && < img className="loading" src={Infinity} alt="" />}
                     {countries.isError && <h1 className="error">Afsus Ma'lumot topilmadi🤦‍♂️</h1>}
                     {
                         countries.data.length && countries.data.map((e) => (
-                            <Card item={e} key={e.name.official} />
+                            <Card theme={theme} item={e} key={e.name.official} />
                         ))
                     }
                 </div>

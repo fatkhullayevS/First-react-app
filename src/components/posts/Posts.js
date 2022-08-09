@@ -4,7 +4,7 @@ import Loading from "../../images/Infinity.svg"
 import "./posts.css"
 import Header from '../header';
 import RenderPosts from '../renderPosts/RenderPosts';
-const Posts = () => {
+const Posts = ({ theme }) => {
 
     const [posts, setPosts] = useState({
         isLoading: true,
@@ -29,14 +29,13 @@ const Posts = () => {
 
     return (
         <>
-            <Header />
             {posts.isLoading && < img className="loading" src={Loading} alt="" />}
             {posts.isError && <h1 className="error">Afsus Ma'lumot topilmadi🤦‍♂️</h1>}
             {posts.data.length &&
                 posts.data.map((e) => (
                     <div className='container'>
                         <div className='row'>
-                            <RenderPosts key={e.name.common} item={e} />
+                            <RenderPosts theme={theme} key={e.name.common} item={e} />
                         </div>
                     </div>
                 ))
